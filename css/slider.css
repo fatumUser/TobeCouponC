@@ -29,7 +29,7 @@
 .slider {
   margin-top: 15px;
   transition-property: margin opasity;
-  transition-duration: 1.5s;
+  transition-duration: 1.2s;
   opacity: 0.2;
 }
 .slider-show {
