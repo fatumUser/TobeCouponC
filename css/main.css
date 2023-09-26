@@ -2696,7 +2696,7 @@ select {
     padding: 0 25px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1100px) { /* 700 */
   .header-list li.header-list__drop .drop-info ul li.li-middle {
     border-bottom-color: transparent;
   }
@@ -2706,6 +2706,15 @@ select {
   .header-bar,
   .header-close {
     display: block;
+  }
+  .header-list {
+    display: none;
+    position: relative;
+  }
+  .header-list li {
+    padding-bottom: 32px; /* Изменил */
+    -webkit-animation: fade-border 0.3s ease forwards;
+    animation: fade-border 0.3s ease forwards;
   }
   .header-row {
     position: fixed;
@@ -2726,15 +2735,6 @@ select {
     z-index: 1001;
     overflow-x: hidden;
     overflow-y: auto;
-  }
-  .header-list {
-    display: none;
-    position: relative;
-  }
-  .header-list li {
-    padding-bottom: 32px; /* Изменил */
-    -webkit-animation: fade-border 0.3s ease forwards;
-    animation: fade-border 0.3s ease forwards;
   }
   .header-list li:nth-child(1),
   .header-list li:nth-child(1) a {
@@ -6101,6 +6101,8 @@ select {
   margin: 29px 0 8px;
   font-size: 16px;
   font-weight: 600;
+  transition-property: background;
+  transition-duration: 0.3s;
 }
 .brand-sidebar .shops-col__text p {
   font-size: 12px;
@@ -9972,7 +9974,7 @@ ul.pagination li.disabled span {
 .header__img-arrow {
   margin-left: 4px;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1100px) { /* 700 */
 .drop-block-wrapper:hover .header-list__drop-block {
   height: 328px;
 }
@@ -9981,7 +9983,7 @@ ul.pagination li.disabled span {
 .drop-block-wrapper:hover .hover-block {
   display: block;
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1100px) { /* 700 */
   .drop-block-wrapper:hover p  {
   color: #5b11a6;
 }
@@ -9994,7 +9996,7 @@ ul.pagination li.disabled span {
 .drop-block-wrapper:hover .header__img-arrow path {
   stroke: #5C11A6;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1100px) { /* 700 */
   .text_special-offers {
     font-size: 20px;
     font-weight: 600;
@@ -10037,7 +10039,7 @@ ul.pagination li.disabled span {
     transition-duration: 0.2s;
     overflow: hidden;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1100px) { /* 700 */
   .header-list__drop-block {
     display: block;
     position: relative;
@@ -10056,7 +10058,7 @@ ul.pagination li.disabled span {
     margin: 0 auto;
     margin-top: 32px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1100px) { /* 700 */
   .header-list__drop-block__content {
     margin: 0;
   }
@@ -10112,7 +10114,7 @@ ul.pagination li.disabled span {
   font-weight: 400;
   padding-top: 18px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1100px) { /* 700 */
   .block-social {
     display: block;
   }                   
