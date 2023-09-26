@@ -28,12 +28,17 @@
 }
 .slider {
   margin-top: 15px;
-  transition-property: margin opasity;
-  transition-duration: 1.2s;
-  opacity: 0.2;
+  opacity: 0.4;
+  transition: opacity 1.2s ease-in-out,-webkit-transform 1.2s ease-in-out;
+  transition: opacity 1.2s ease-in-out,transform 1.2s ease-in-out;
+  transition: opacity 1.2s ease-in-out,transform 1.2s ease-in-out,-webkit-transform 1.2s ease-in-out;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 .slider-show {
   margin-top: 0 !important;
+  -webkit-transform: translateY(16px);
+  transform: translateY(16px);
   opacity: 1;
 }
 .swiper {
