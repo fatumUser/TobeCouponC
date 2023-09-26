@@ -27,10 +27,10 @@
   z-index: 1;
 }
 .slider {
-  margin-top: -40px;
+  margin-top: 15px;
   transition-property: margin opasity;
-  transition-duration: 1s;
-  opacity: 0.4;
+  transition-duration: 1.5s;
+  opacity: 0.2;
 }
 .slider-show {
   margin-top: 0 !important;
